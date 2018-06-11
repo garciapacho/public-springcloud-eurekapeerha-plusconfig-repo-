@@ -2,3 +2,14 @@ server:
   port: 8081
 appservice:
   myproperty: 'Hi, uesast1d property'   
+eureka: 
+  instance: 
+    metadataMap.zone: us-east-1d                         
+  client: 
+    region: us-east
+    availability-zones: 
+      us-east: us-east-1d,us-east-1c
+    service-url: 
+      us-east-1c: http://servicediscoveryserver1:8770/eureka 
+      us-east-1d: http://servicediscoveryserver2:8771/eureka
+  

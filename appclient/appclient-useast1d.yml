@@ -1,5 +1,7 @@
 server: 
   port: 8083
+appclient:
+  myproperty: 'Hi, uesast1d property'   
 eureka: 
   instance: 
     metadataMap.zone: us-east-1d
